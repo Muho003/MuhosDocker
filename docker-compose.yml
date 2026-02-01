@@ -3,9 +3,9 @@ services:
   my_image:
     build: 
         context: ./
-    image: MuhosEchoServer:latest
+    image: muhos-echo-server:latest
   echoserver:
-    image: MuhosEchoServer:latest
+    image: muhos-echo-server:latest
     command: python3 -u echo-server.py
     ports:
       - "5001:5001"
