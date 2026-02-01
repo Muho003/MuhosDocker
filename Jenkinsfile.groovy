@@ -20,7 +20,7 @@ pipeline {
         sh 'docker compose build'
       }
     }
-    stage('Up (optional)') {
+    stage('Up') {
       when { expression { fileExists('docker-compose.yml') } }
       steps {
         sh 'docker compose up -d'
